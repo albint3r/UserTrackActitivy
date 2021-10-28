@@ -1,7 +1,7 @@
 
 x = 2
-y = 5
+z = 10
 
-result = x * y
+result = x * z
 
 print(result)
