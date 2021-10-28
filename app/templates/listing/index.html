@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<nav>
+    <a href="{{url_for('listing.other')}}">Other</a> |
+    <a href="{{url_for('listing.index')}}">index</a> |
+</nav>
+
+<ul>
+    <li>Usuario:</li>
+    <li>ip_address: {{ session.ip_address }}</li>
+    <li>requested_url: {{ session.requested_url }}</li>
+    <li>referer_page: {{ session.referer_page }}</li>
+    <li>page_name: {{ session.page_name }}</li>
+    <li>query_string: {{ session.query_string }}</li>
+    <li>user_agent: {{ session.user_agent }}</li>
+    <li>view: {{ session.view }}</li>
+    <li>Id: {{ session.user.id }}</li>
+    <li>Session previa: {{ session.prev_page }}</li>
+    <li>listing session: {{ session.listing }}</li>
+
+</ul>
+
+
+
+{% endblock %}
